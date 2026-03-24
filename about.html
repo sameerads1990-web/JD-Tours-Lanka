@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | JD Tours Lanka</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            darkGold: '#AA8A2E',
+                            dark: '#0f172a',
+                            light: '#f8fafc',
+                            gray: '#1e293b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-brand-light antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 bg-brand-dark/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-bus text-brand-gold text-3xl"></i>
+                    <a href="index.html" class="text-2xl font-bold font-serif whitespace-nowrap">
+                        JD <span class="gold-gradient-text">Tours Lanka</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-300 hover:text-brand-gold transition font-medium">Home</a>
+                    <a href="about.html" class="text-brand-gold font-medium hover:text-white transition">About</a>
+                    <a href="fleet.html" class="text-gray-300 hover:text-brand-gold transition font-medium">Our Fleet</a>
+                    <a href="services.html" class="text-gray-300 hover:text-brand-gold transition font-medium">Services</a>
+                    <a href="contact.html" class="bg-brand-gold text-brand-dark px-6 py-2 rounded-full font-semibold hover:bg-brand-darkGold transition shadow-[0_0_15px_rgba(212,175,55,0.4)]">Book Now</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-gray border-t border-white/10 absolute w-full left-0 top-full shadow-xl">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center">
+                <a href="index.html" class="text-gray-300 hover:text-brand-gold block px-3 py-2 text-base font-medium">Home</a>
+                <a href="about.html" class="text-brand-gold block px-3 py-2 text-base font-medium">About</a>
+                <a href="fleet.html" class="text-gray-300 hover:text-brand-gold block px-3 py-2 text-base font-medium">Our Fleet</a>
+                <a href="services.html" class="text-gray-300 hover:text-brand-gold block px-3 py-2 text-base font-medium">Services</a>
+                <a href="contact.html" class="bg-brand-gold text-brand-dark px-6 py-2 mt-2 rounded-full font-semibold inline-block">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="relative h-[60vh] flex items-center justify-center pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="assets/images/modern_bus_resort_1774317484156.png" alt="JD Tours Bus" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-brand-dark/80"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 animate-fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 font-serif">About <span class="gold-gradient-text">Us</span></h1>
+            <p class="text-xl text-gray-300 font-light max-w-2xl mx-auto">Discover the story behind Sri Lanka's premier luxury bus rental service.</p>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="scroll-animate">
+                <span class="text-brand-gold font-bold tracking-widest uppercase text-sm mb-3 block">Our Journey</span>
+                <h2 class="text-4xl font-bold mb-6 font-serif">Redefining Luxury Travel in <span class="text-brand-gold">Sri Lanka</span></h2>
+                <p class="text-gray-300 mb-6 text-lg leading-relaxed">
+                    JD Tours Lanka was established with a singular vision: to elevate the standard of group transportation across the island. We believe that the journey should be just as spectacular as the destination itself. 
+                </p>
+                <p class="text-gray-300 mb-8 text-lg leading-relaxed">
+                    From our humble beginnings, we have grown our fleet to include state-of-the-art luxury coaches that offer VIP amenities. Our commitment to punctuality, safety, and unwavering comfort has made us the preferred choice for tours, corporate events, and exclusive private hires.
+                </p>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="glass-card p-6 rounded-xl border border-white/5">
+                        <h4 class="text-3xl font-bold text-brand-gold mb-2">10+</h4>
+                        <p class="text-gray-400">Years Experience</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-xl border border-white/5">
+                        <h4 class="text-3xl font-bold text-brand-gold mb-2">50+</h4>
+                        <p class="text-gray-400">Luxury Vehicles</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative scroll-animate delay-200">
+                <div class="rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(212,175,55,0.2)] border border-brand-gold/30">
+                    <img src="assets/images/luxury_bus_exterior_1774317430482.png" alt="Our Fleet Journey" class="w-full h-auto object-cover hover:scale-105 transition duration-700">
+                </div>
+                <div class="absolute -bottom-8 -left-8 glass-card p-8 rounded-2xl hidden md:block border border-white/5">
+                    <p class="text-2xl font-serif text-white mb-2">"Your comfort,</p>
+                    <p class="text-xl text-brand-gold font-serif">our masterpiece."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#080b14] pt-16 pb-8 border-t border-white/5 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                
+                <div class="md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-bus text-brand-gold text-3xl"></i>
+                        <span class="text-2xl font-bold font-serif">
+                            JD <span class="text-brand-gold">Tours</span>
+                        </span>
+                    </div>
+                    <p class="text-gray-400 mb-6">Redefining luxury road travel in Sri Lanka. Your comfort, our priority.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-brand-gold transition">Home</a></li>
+                        <li><a href="about.html" class="text-brand-gold hover:text-brand-gold transition">About Us</a></li>
+                        <li><a href="fleet.html" class="text-gray-400 hover:text-brand-gold transition">Our Fleet</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-brand-gold transition">Services</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li class="text-gray-400">Island Wide Tours</li>
+                        <li class="text-gray-400">Corporate Travel</li>
+                        <li class="text-gray-400">Airport Transfers</li>
+                        <li class="text-gray-400">Wedding Hires</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-6">Contact Info</h4>
+                    <ul class="space-y-4">
+                        <li class="text-gray-400">123 Luxury Avenue, Colombo 03</li>
+                        <li class="text-gray-400">+94 77 123 4567</li>
+                        <li class="text-gray-400">info@jdtours.lk</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flexjustify-between items-center text-sm text-gray-500 text-center">
+                <p>&copy; 2024 JD Tours Lanka. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

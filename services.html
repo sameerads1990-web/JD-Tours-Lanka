@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | JD Tours Lanka</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            darkGold: '#AA8A2E',
+                            dark: '#0f172a',
+                            light: '#f8fafc',
+                            gray: '#1e293b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-brand-light antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 bg-brand-dark/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-bus text-brand-gold text-3xl"></i>
+                    <a href="index.html" class="text-2xl font-bold font-serif whitespace-nowrap">
+                        JD <span class="gold-gradient-text">Tours Lanka</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-300 hover:text-brand-gold transition font-medium">Home</a>
+                    <a href="about.html" class="text-gray-300 hover:text-brand-gold transition font-medium">About</a>
+                    <a href="fleet.html" class="text-gray-300 hover:text-brand-gold transition font-medium">Our Fleet</a>
+                    <a href="services.html" class="text-brand-gold font-medium hover:text-white transition">Services</a>
+                    <a href="contact.html" class="bg-brand-gold text-brand-dark px-6 py-2 rounded-full font-semibold hover:bg-brand-darkGold transition shadow-[0_0_15px_rgba(212,175,55,0.4)]">Book Now</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-gray border-t border-white/10 absolute w-full left-0 top-full shadow-xl">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center">
+                <a href="index.html" class="text-gray-300 hover:text-brand-gold block px-3 py-2 text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-300 hover:text-brand-gold block px-3 py-2 text-base font-medium">About</a>
+                <a href="fleet.html" class="text-gray-300 hover:text-brand-gold block px-3 py-2 text-base font-medium">Our Fleet</a>
+                <a href="services.html" class="text-brand-gold block px-3 py-2 text-base font-medium">Services</a>
+                <a href="contact.html" class="bg-brand-gold text-brand-dark px-6 py-2 mt-2 rounded-full font-semibold inline-block">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="relative h-[50vh] flex items-center justify-center pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="assets/images/luxury_bus_interior_1774317451404.png" alt="Services Banner" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-brand-dark/80"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 animate-fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 font-serif">Premium <span class="gold-gradient-text">Services</span></h1>
+            <p class="text-xl text-gray-300 font-light max-w-2xl mx-auto">Tailored transportation solutions for every occasion.</p>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-brand-dark relative z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card p-10 rounded-3xl hover:border-brand-gold transition duration-300 scroll-animate group">
+                    <div class="w-20 h-20 rounded-2xl bg-brand-gold/10 flex items-center justify-center mb-8 transform group-hover:-translate-y-2 transition duration-300">
+                        <i class="fa-solid fa-map-location-dot text-4xl text-brand-gold"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold mb-4 text-white">Island Wide Tours</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Experience the beauty of Sri Lanka without the stress of driving. We provide bespoke multi-day island tour packages securely and comfortably.
+                    </p>
+                    <a href="contact.html" class="text-brand-gold uppercase tracking-wider text-sm font-bold flex items-center gap-2 hover:text-white transition">
+                        Enquire Now <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-10 rounded-3xl hover:border-brand-gold transition duration-300 scroll-animate delay-100 group">
+                    <div class="w-20 h-20 rounded-2xl bg-brand-gold/10 flex items-center justify-center mb-8 transform group-hover:-translate-y-2 transition duration-300">
+                        <i class="fa-solid fa-briefcase text-4xl text-brand-gold"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold mb-4 text-white">Corporate Travel</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Reliable and professional transportation for your company outings, team-building retreats, and specialized executive transfers.
+                    </p>
+                    <a href="contact.html" class="text-brand-gold uppercase tracking-wider text-sm font-bold flex items-center gap-2 hover:text-white transition">
+                        Enquire Now <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-10 rounded-3xl hover:border-brand-gold transition duration-300 scroll-animate delay-200 group">
+                    <div class="w-20 h-20 rounded-2xl bg-brand-gold/10 flex items-center justify-center mb-8 transform group-hover:-translate-y-2 transition duration-300">
+                        <i class="fa-solid fa-plane-arrival text-4xl text-brand-gold"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold mb-4 text-white">Airport Transfers</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Punctual and hassle-free airport pickups and drop-offs directly from the Colombo International Airport to any hotel in Sri Lanka.
+                    </p>
+                    <a href="contact.html" class="text-brand-gold uppercase tracking-wider text-sm font-bold flex items-center gap-2 hover:text-white transition">
+                        Enquire Now <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-10 rounded-3xl hover:border-brand-gold transition duration-300 scroll-animate group">
+                    <div class="w-20 h-20 rounded-2xl bg-brand-gold/10 flex items-center justify-center mb-8 transform group-hover:-translate-y-2 transition duration-300">
+                        <i class="fa-solid fa-rings-wedding text-4xl text-brand-gold"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold mb-4 text-white">Wedding Hires</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Transport your guests in VIP style. We offer specialized wedding logistics guaranteeing your guests arrive on time and in ultimate comfort.
+                    </p>
+                    <a href="contact.html" class="text-brand-gold uppercase tracking-wider text-sm font-bold flex items-center gap-2 hover:text-white transition">
+                        Enquire Now <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card p-10 rounded-3xl hover:border-brand-gold transition duration-300 scroll-animate delay-100 group lg:col-span-2 overflow-hidden relative">
+                    <img src="assets/images/luxury_bus_exterior_1774317430482.png" alt="Pilgrimage" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition duration-700">
+                    <div class="relative z-10 w-full h-full flex flex-col justify-center">
+                        <h3 class="text-3xl font-serif font-bold mb-4 text-white">Custom Pilgrimages & Special Events</h3>
+                        <p class="text-gray-300 mb-6 leading-relaxed max-w-2xl">
+                            We cater to extensive pilgrimage tours, offering a safe and dignified traveling experience with tailored itineraries fitting your specific religious requirements. Our buses handle challenging topographies efficiently, ensuring smooth operations all around.
+                        </p>
+                        <a href="contact.html" class="inline-block mt-auto bg-brand-gold text-brand-dark px-8 py-3 rounded-full font-bold self-start hover:bg-white hover:text-brand-dark transition shadow-[0_0_15px_rgba(212,175,55,0.4)]">
+                            Talk to Us
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#080b14] pt-16 pb-8 border-t border-white/5 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border-t border-white/10 pt-8 flex justify-between items-center text-sm text-gray-500 text-center">
+                <p>&copy; 2024 JD Tours Lanka. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

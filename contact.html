@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | JD Tours Lanka</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            darkGold: '#AA8A2E',
+                            dark: '#0f172a',
+                            light: '#f8fafc',
+                            gray: '#1e293b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-brand-light antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 bg-brand-dark/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-bus text-brand-gold text-3xl"></i>
+                    <a href="index.html" class="text-2xl font-bold font-serif whitespace-nowrap">
+                        JD <span class="gold-gradient-text">Tours Lanka</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-300 hover:text-brand-gold transition font-medium">Home</a>
+                    <a href="about.html" class="text-gray-300 hover:text-brand-gold transition font-medium">About</a>
+                    <a href="fleet.html" class="text-gray-300 hover:text-brand-gold transition font-medium">Our Fleet</a>
+                    <a href="services.html" class="text-gray-300 hover:text-brand-gold transition font-medium">Services</a>
+                    <a href="contact.html" class="text-brand-gold font-medium hover:text-white transition">Contact</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-gray border-t border-white/10 absolute w-full left-0 top-full shadow-xl">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center">
+                <a href="index.html" class="text-gray-300 hover:text-brand-gold block px-3 py-2 text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-300 hover:text-brand-gold block px-3 py-2 text-base font-medium">About</a>
+                <a href="fleet.html" class="text-gray-300 hover:text-brand-gold block px-3 py-2 text-base font-medium">Our Fleet</a>
+                <a href="services.html" class="text-gray-300 hover:text-brand-gold block px-3 py-2 text-base font-medium">Services</a>
+                <a href="contact.html" class="text-brand-gold block px-3 py-2 text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="relative h-[40vh] flex items-center justify-center pt-20">
+        <div class="absolute inset-0 z-0 bg-brand-gray"></div>
+        <div class="relative z-10 text-center px-4 animate-fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 font-serif">Contact <span class="gold-gradient-text">Us</span></h1>
+            <p class="text-xl text-gray-300 font-light max-w-2xl mx-auto">Get in touch for bookings, quotes, and inquiries.</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="py-20 relative z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <!-- Contact Info -->
+                <div class="scroll-animate">
+                    <h2 class="text-4xl font-serif font-bold mb-8 text-white">Let's Plan Your <span class="text-brand-gold">Journey</span></h2>
+                    <p class="text-gray-400 mb-10 text-lg">
+                        Fill out the inquiry form and our experienced travel coordinators will get back to you within 24 hours to organize your luxurious trip. 
+                    </p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-6">
+                            <div class="w-14 h-14 rounded-full bg-brand-gold/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-location-dot text-2xl text-brand-gold"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-xl mb-1">Office Location</h4>
+                                <p class="text-gray-400">123 Luxury Avenue,<br>Colombo 03, Sri Lanka</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-6">
+                            <div class="w-14 h-14 rounded-full bg-brand-gold/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-phone text-2xl text-brand-gold"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-xl mb-1">Phone Number</h4>
+                                <p class="text-gray-400">+94 77 123 4567<br>+94 11 987 6543</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-6">
+                            <div class="w-14 h-14 rounded-full bg-brand-gold/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-envelope text-2xl text-brand-gold"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-xl mb-1">Email Address</h4>
+                                <p class="text-gray-400">info@jdtours.lk<br>bookings@jdtours.lk</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="glass-card p-10 rounded-3xl border border-white/5 scroll-animate delay-200">
+                    <form onsubmit="event.preventDefault(); alert('Inquiry Sent! We will contact you shortly.');">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-gray-400 text-sm font-bold mb-2" for="name">Full Name</label>
+                                <input class="w-full bg-[#0b1121] border border-white/10 text-white rounded-xl py-3 px-4 focus:outline-none focus:border-brand-gold transition focus:ring-1 focus:ring-brand-gold" id="name" type="text" placeholder="John Doe" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-400 text-sm font-bold mb-2" for="phone">Phone Number</label>
+                                <input class="w-full bg-[#0b1121] border border-white/10 text-white rounded-xl py-3 px-4 focus:outline-none focus:border-brand-gold transition focus:ring-1 focus:ring-brand-gold" id="phone" type="tel" placeholder="+94 7X XXX XXXX" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-gray-400 text-sm font-bold mb-2" for="email">Email Address</label>
+                            <input class="w-full bg-[#0b1121] border border-white/10 text-white rounded-xl py-3 px-4 focus:outline-none focus:border-brand-gold transition focus:ring-1 focus:ring-brand-gold" id="email" type="email" placeholder="johndoe@example.com" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block text-gray-400 text-sm font-bold mb-2" for="service">Select Service</label>
+                            <select class="w-full bg-[#0b1121] border border-white/10 text-gray-400 rounded-xl py-3 px-4 focus:outline-none focus:border-brand-gold transition focus:ring-1 focus:ring-brand-gold" id="service" required>
+                                <option value="" disabled selected>Choose a service</option>
+                                <option value="island_tour">Island Wide Tour</option>
+                                <option value="corporate">Corporate Hire</option>
+                                <option value="airport">Airport Transfer</option>
+                                <option value="wedding">Wedding Hire</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-8">
+                            <label class="block text-gray-400 text-sm font-bold mb-2" for="message">Your Message / Requirements</label>
+                            <textarea class="w-full bg-[#0b1121] border border-white/10 text-white rounded-xl py-3 px-4 focus:outline-none focus:border-brand-gold transition focus:ring-1 focus:ring-brand-gold h-32 resize-none" id="message" placeholder="Please let us know your travel dates, passenger count, and destinations..." required></textarea>
+                        </div>
+                        
+                        <button class="w-full bg-brand-gold text-brand-dark py-4 rounded-xl font-bold text-lg hover:bg-white transition duration-300 shadow-[0_0_20px_rgba(212,175,55,0.3)]">
+                            Send Inquiry <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (Placeholder) -->
+    <div class="h-96 w-full bg-[#0b1121] relative overflow-hidden flex items-center justify-center opacity-80 border-t border-b border-white/5">
+        <p class="text-brand-gold text-2xl font-serif">Google Maps Integration Goes Here</p>
+    </div>
+
+    <!-- Footer Segment -->
+    <footer class="bg-[#080b14] pt-8 pb-8 border-t border-white/5 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center text-sm text-gray-500 text-center">
+                <p>&copy; 2024 JD Tours Lanka. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

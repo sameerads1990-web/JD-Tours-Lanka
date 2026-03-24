@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Fleet | JD Tours Lanka</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            darkGold: '#AA8A2E',
+                            dark: '#0f172a',
+                            light: '#f8fafc',
+                            gray: '#1e293b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-brand-light antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 bg-brand-dark/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-bus text-brand-gold text-3xl"></i>
+                    <a href="index.html" class="text-2xl font-bold font-serif whitespace-nowrap">
+                        JD <span class="gold-gradient-text">Tours Lanka</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-300 hover:text-brand-gold transition font-medium">Home</a>
+                    <a href="about.html" class="text-gray-300 hover:text-brand-gold transition font-medium">About</a>
+                    <a href="fleet.html" class="text-brand-gold font-medium hover:text-white transition">Our Fleet</a>
+                    <a href="services.html" class="text-gray-300 hover:text-brand-gold transition font-medium">Services</a>
+                    <a href="contact.html" class="bg-brand-gold text-brand-dark px-6 py-2 rounded-full font-semibold hover:bg-brand-darkGold transition shadow-[0_0_15px_rgba(212,175,55,0.4)]">Book Now</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-gray border-t border-white/10 absolute w-full left-0 top-full shadow-xl">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center">
+                <a href="index.html" class="text-gray-300 hover:text-brand-gold block px-3 py-2 text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-300 hover:text-brand-gold block px-3 py-2 text-base font-medium">About</a>
+                <a href="fleet.html" class="text-brand-gold block px-3 py-2 text-base font-medium">Our Fleet</a>
+                <a href="services.html" class="text-gray-300 hover:text-brand-gold block px-3 py-2 text-base font-medium">Services</a>
+                <a href="contact.html" class="bg-brand-gold text-brand-dark px-6 py-2 mt-2 rounded-full font-semibold inline-block">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="relative h-[50vh] flex items-center justify-center pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="assets/images/modern_bus_resort_1774317484156.png" alt="Fleet Banner" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-brand-dark/80"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 animate-fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 font-serif">Our <span class="gold-gradient-text">Fleet</span></h1>
+            <p class="text-xl text-gray-300 font-light max-w-2xl mx-auto">Explore our collection of world-class VIP tourist coaches.</p>
+        </div>
+    </header>
+
+    <!-- Fleet Section -->
+    <section class="py-20 bg-brand-dark relative z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-animate">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 font-serif">The <span class="text-brand-gold">VIP Edition</span> Collection</h2>
+                <div class="w-24 h-1 bg-brand-gold mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
+                    Choose from our selection of 45-seater and 25-seater luxury coaches. Every vehicle is meticulously maintained for your safety and comfort.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Vehicle 1 -->
+                <div class="glass-card rounded-3xl overflow-hidden shadow-2xl transition hover:-translate-y-2 border border-white/10 hover:border-brand-gold/50 flex flex-col scroll-animate">
+                    <div class="relative h-72">
+                        <img src="assets/images/luxury_bus_exterior_1774317430482.png" alt="45 Seater Premium Coach" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-brand-gold text-brand-dark px-4 py-1 rounded-full font-bold text-sm uppercase tracking-wide">
+                            Top Tier
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-3xl font-bold font-serif mb-2 text-white">45-Seater VIP Coach</h3>
+                            <p class="text-brand-gold font-medium mb-6">Perfect for Large Groups & Corporate Tours</p>
+                            
+                            <div class="grid grid-cols-2 gap-4 mb-8">
+                                <div class="flex items-center gap-3 text-gray-300">
+                                    <i class="fa-solid fa-chair text-brand-gold"></i>
+                                    <span>Reclining Seats</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-gray-300">
+                                    <i class="fa-solid fa-snowflake text-brand-gold"></i>
+                                    <span>Climate AC</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-gray-300">
+                                    <i class="fa-solid fa-wifi text-brand-gold"></i>
+                                    <span>Free Wi-Fi</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-gray-300">
+                                    <i class="fa-solid fa-tv text-brand-gold"></i>
+                                    <span>Entertainment</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="w-full block text-center border-t border-white/10 pt-6 text-white hover:text-brand-gold transition font-semibold">
+                            Request Quote <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Vehicle 2 -->
+                <div class="glass-card rounded-3xl overflow-hidden shadow-2xl transition hover:-translate-y-2 border border-white/10 hover:border-brand-gold/50 flex flex-col scroll-animate delay-200">
+                    <div class="relative h-72">
+                        <img src="assets/images/luxury_bus_interior_1774317451404.png" alt="25 Seater Premium Coach" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 bg-brand-dark/80 backdrop-blur-md text-white border border-white/20 px-4 py-1 rounded-full font-bold text-sm uppercase tracking-wide">
+                            Premium Check
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-3xl font-bold font-serif mb-2 text-white">25-Seater Mini Coach</h3>
+                            <p class="text-brand-gold font-medium mb-6">Ideal for Family Tours & Small Groups</p>
+                            
+                            <div class="grid grid-cols-2 gap-4 mb-8">
+                                <div class="flex items-center gap-3 text-gray-300">
+                                    <i class="fa-solid fa-chair text-brand-gold"></i>
+                                    <span>Plush Seating</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-gray-300">
+                                    <i class="fa-solid fa-snowflake text-brand-gold"></i>
+                                    <span>Dual AC</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-gray-300">
+                                    <i class="fa-solid fa-suitcase-rolling text-brand-gold"></i>
+                                    <span>Spacious Boot</span>
+                                </div>
+                                <div class="flex items-center gap-3 text-gray-300">
+                                    <i class="fa-solid fa-microphone text-brand-gold"></i>
+                                    <span>PA System</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="w-full block text-center border-t border-white/10 pt-6 text-white hover:text-brand-gold transition font-semibold">
+                            Request Quote <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Segment -->
+    <footer class="bg-[#080b14] pt-16 pb-8 border-t border-white/5 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border-t border-white/10 pt-8 flex justify-between items-center text-sm text-gray-500 text-center">
+                <p>&copy; 2024 JD Tours Lanka. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
